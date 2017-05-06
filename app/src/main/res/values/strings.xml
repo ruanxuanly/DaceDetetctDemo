@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">FDDemo</string>
+    <string name="app_name">OpenCVDemo</string>
+
+    <string name="title_activity_image_mixing">ImageMixingActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

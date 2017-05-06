@@ -1,0 +1,77 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="com.example.ruanxuan.fddemo.com.example.ruanxuan.OpenCVDemo.ImageMixingDemo.ImageMixingActivity">
+
+
+
+        <FrameLayout
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:id="@+id/bottomImageView" />
+
+            <com.example.ruanxuan.OpenCVDemo.ImageMixingDemo.MoveImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:id="@+id/topImageView" />
+
+        </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:orientation="vertical">
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="0xff"
+            android:progress="0"
+            android:id="@+id/alphaBar"/>
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+            <Button
+                android:id="@+id/selBottomImgBtn"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Select Bottom Image" />
+            <Button
+                android:id="@+id/saveBtn"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Save Image" />
+            <Button
+                android:id="@+id/selTopImgBtn"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Select Top Image" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

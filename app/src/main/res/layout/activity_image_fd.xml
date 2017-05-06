@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+    android:layout_width="640dp"
+    android:layout_height="480dp"
+    android:paddingLeft="0dp"
+    android:scaleType="fitStart"
+    android:background="@color/colorPrimaryDark"
+    android:id="@+id/showView"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Detect"
+            android:id="@+id/detectBtn"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/selectPhoto"
+            android:text="select"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/detectBtn"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/resultText"
+            android:textSize="18dp"
+            android:layout_alignParentBottom="true"
+            android:text="0个"
+            android:layout_toRightOf="@id/selectPhoto"/>
+    </RelativeLayout>
+</LinearLayout>

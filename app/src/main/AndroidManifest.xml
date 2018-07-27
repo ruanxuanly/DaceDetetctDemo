@@ -15,7 +15,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.ruanxuan.OpenCVDemo.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,15 +23,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.ruanxuan.OpenCVDemo.VideoFdDemo.VideoFdActivity"
+            android:name=".VideoFdDemo.VideoFdActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:screenOrientation="landscape" />
         <activity
-            android:name="com.example.ruanxuan.OpenCVDemo.ImageMixingDemo.ImageMixingActivity"
+            android:name=".ImageMixingDemo.ImageMixingActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_image_mixing"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name="com.example.ruanxuan.OpenCVDemo.ImageFdDemo.ImageFDActivity"></activity>
+        <activity android:name=".ImageFdDemo.ImageFDActivity" />
+        <activity android:name=".EdgeDetection.EdgeDetectionActivity" />
+        <activity android:name=".FaceRecognition.FaceRecgnitionActivity"></activity>
     </application>
 
 </manifest>

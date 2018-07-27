@@ -3,9 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0099cc"
-    tools:context="com.example.ruanxuan.fddemo.com.example.ruanxuan.OpenCVDemo.ImageMixingDemo.ImageMixingActivity">
-
-
+    tools:context="com.example.ruanxuan.OpenCVDemo.ImageMixingDemo.ImageMixingActivity">
 
         <FrameLayout
             android:id="@+id/imageView"

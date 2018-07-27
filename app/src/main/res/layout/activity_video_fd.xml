@@ -6,7 +6,7 @@
     android:id="@+id/activity_camera_fd"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.ruanxuan.fddemo.com.example.ruanxuan.OpenCVDemo.VideoFdDemo.VideoFdActivity">
+    tools:context="com.example.ruanxuan.openCVDemo.com.example.ruanxuan.OpenCVDemo.VideoFdDemo.VideoFdActivity">
 
     <org.opencv.android.JavaCameraView
         android:layout_width="fill_parent"

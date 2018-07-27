@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.ruanxuan.fddemo.com.example.ruanxuan.OpenCVDemo.MainActivity">
+    tools:context="com.example.ruanxuan.OpenCVDemo.MainActivity">
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -23,4 +23,17 @@
         android:layout_height="wrap_content"
         android:id="@+id/videoFdBtn"
         android:text="Video Face Detect Demo"/>
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edgeDeteBtn"
+        android:text="Edge Detection Demo"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/frBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="FaceRegnition Demo" />
 </LinearLayout>

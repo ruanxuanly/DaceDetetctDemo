@@ -11,6 +11,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.ruanxuan.OpenCVDemo.EdgeDetection.EdgeDetectionActivity;
+import com.example.ruanxuan.OpenCVDemo.FaceRecognition.FaceRecgnitionActivity;
 import com.example.ruanxuan.OpenCVDemo.ImageFdDemo.ImageFDActivity;
 import com.example.ruanxuan.OpenCVDemo.ImageMixingDemo.ImageMixingActivity;
 import com.example.ruanxuan.OpenCVDemo.R;
@@ -22,6 +24,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Button mImageMixBtn ;
     private Button mVideoFdBtn;
+    private Button mVideoFrBtn;
     private Button mImageFdBtn;
 
     @Override
@@ -49,6 +52,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mImageFdBtn = (Button)findViewById(R.id.imageFdBtn);
         mImageFdBtn.setOnClickListener(this);
 
+        mVideoFrBtn = (Button)findViewById(R.id.frBtn);
+        mVideoFdBtn.setOnClickListener(this);
+
     }
 
     @Override
@@ -65,6 +71,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.imageMixBtn:
                 intent.setClass(this,ImageMixingActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.edgeDeteBtn:
+                intent.setClass(this,EdgeDetectionActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.frBtn:
+                intent.setClass(this,FaceRecgnitionActivity.class);
                 startActivity(intent);
                 break;
             default:

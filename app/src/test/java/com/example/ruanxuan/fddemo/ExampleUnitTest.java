@@ -1,4 +1,4 @@
-package com.example.ruanxuan.fddemo;
+package com.example.ruanxuan.OpenCVDemo;
 
 import org.junit.Test;
 

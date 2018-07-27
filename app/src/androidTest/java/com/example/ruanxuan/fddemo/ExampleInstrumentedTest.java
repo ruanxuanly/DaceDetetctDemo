@@ -1,4 +1,4 @@
-package com.example.ruanxuan.fddemo;
+package com.example.ruanxuan.OpenCVDemo;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.ruanxuan.fddemo", appContext.getPackageName());
+        assertEquals("com.example.ruanxuan.OpenCVDemo", appContext.getPackageName());
     }
 }
